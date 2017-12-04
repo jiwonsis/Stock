@@ -18,6 +18,8 @@ extension GroupsViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationUI()
+        tableView.separatorColor = .separator
+        tableView.hideBottonSeperator()
         
         if let groups = loadData() {
             self.groups = groups
@@ -34,7 +36,7 @@ private extension GroupsViewController {
     }
     
     @objc func newGroup() {
-        let editGroupViewController = EditGroupViewController(group: nil)
+        let editGroupViewController = GroupEditViewController(group: nil)
         editGroupViewController.didSaveGroup = { group in
             self.groups.append(group)
             self.saveGroup()
@@ -84,7 +86,7 @@ extension GroupsViewController: UITableViewDelegate, UITableViewDataSource {
         
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let editGroupViewController = EditGroupViewController(group: groups[indexPath.row])
+        let editGroupViewController = GroupEditViewController(group: groups[indexPath.row])
         present(UINavigationController(rootViewController: editGroupViewController), animated: true, completion: nil)
         
     }
