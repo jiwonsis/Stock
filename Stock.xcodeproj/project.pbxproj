@@ -9,19 +9,35 @@
 /* Begin PBXBuildFile section */
 		345CDD7F1FD4F9BA00BC8B3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345CDD7E1FD4F9BA00BC8B3E /* AppDelegate.swift */; };
 		345CDD811FD4F9BB00BC8B3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345CDD801FD4F9BB00BC8B3E /* ViewController.swift */; };
-		345CDD841FD4F9BB00BC8B3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 345CDD821FD4F9BB00BC8B3E /* Main.storyboard */; };
 		345CDD861FD4F9BB00BC8B3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 345CDD851FD4F9BB00BC8B3E /* Assets.xcassets */; };
 		345CDD891FD4F9BB00BC8B3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 345CDD871FD4F9BB00BC8B3E /* LaunchScreen.storyboard */; };
+		345CDD931FD4FA6100BC8B3E /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345CDD911FD4FA6100BC8B3E /* GroupsViewController.swift */; };
+		345CDD941FD4FA6100BC8B3E /* GroupsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 345CDD921FD4FA6100BC8B3E /* GroupsViewController.xib */; };
+		345CDD971FD4FCEB00BC8B3E /* EditGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345CDD951FD4FCEB00BC8B3E /* EditGroupViewController.swift */; };
+		345CDD981FD4FCEB00BC8B3E /* EditGroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 345CDD961FD4FCEB00BC8B3E /* EditGroupViewController.xib */; };
+		345CDD9C1FD4FFA500BC8B3E /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345CDD9A1FD4FFA500BC8B3E /* TextFieldTableViewCell.swift */; };
+		345CDD9D1FD4FFA500BC8B3E /* TextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 345CDD9B1FD4FFA500BC8B3E /* TextFieldTableViewCell.xib */; };
+		345CDDA01FD51E2D00BC8B3E /* NSObject+Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345CDD9F1FD51E2D00BC8B3E /* NSObject+Stock.swift */; };
+		345CDDA21FD51F5600BC8B3E /* UIKit+Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345CDDA11FD51F5600BC8B3E /* UIKit+Stock.swift */; };
+		345CDDA51FD527E900BC8B3E /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345CDDA41FD527E900BC8B3E /* Group.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		345CDD7B1FD4F9BA00BC8B3E /* Stock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		345CDD7E1FD4F9BA00BC8B3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		345CDD801FD4F9BB00BC8B3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		345CDD831FD4F9BB00BC8B3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		345CDD851FD4F9BB00BC8B3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		345CDD881FD4F9BB00BC8B3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		345CDD8A1FD4F9BB00BC8B3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		345CDD911FD4FA6100BC8B3E /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
+		345CDD921FD4FA6100BC8B3E /* GroupsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupsViewController.xib; sourceTree = "<group>"; };
+		345CDD951FD4FCEB00BC8B3E /* EditGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGroupViewController.swift; sourceTree = "<group>"; };
+		345CDD961FD4FCEB00BC8B3E /* EditGroupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditGroupViewController.xib; sourceTree = "<group>"; };
+		345CDD9A1FD4FFA500BC8B3E /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		345CDD9B1FD4FFA500BC8B3E /* TextFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldTableViewCell.xib; sourceTree = "<group>"; };
+		345CDD9F1FD51E2D00BC8B3E /* NSObject+Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Stock.swift"; sourceTree = "<group>"; };
+		345CDDA11FD51F5600BC8B3E /* UIKit+Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Stock.swift"; sourceTree = "<group>"; };
+		345CDDA41FD527E900BC8B3E /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +70,54 @@
 		345CDD7D1FD4F9BA00BC8B3E /* Stock */ = {
 			isa = PBXGroup;
 			children = (
+				345CDDA31FD527D100BC8B3E /* Models */,
+				345CDD9E1FD51E0B00BC8B3E /* Extension */,
+				345CDD991FD4FF6200BC8B3E /* Cells */,
+				345CDD901FD4F9DE00BC8B3E /* ViewControllers */,
 				345CDD7E1FD4F9BA00BC8B3E /* AppDelegate.swift */,
 				345CDD801FD4F9BB00BC8B3E /* ViewController.swift */,
-				345CDD821FD4F9BB00BC8B3E /* Main.storyboard */,
 				345CDD851FD4F9BB00BC8B3E /* Assets.xcassets */,
 				345CDD871FD4F9BB00BC8B3E /* LaunchScreen.storyboard */,
 				345CDD8A1FD4F9BB00BC8B3E /* Info.plist */,
 			);
 			path = Stock;
+			sourceTree = "<group>";
+		};
+		345CDD901FD4F9DE00BC8B3E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				345CDD911FD4FA6100BC8B3E /* GroupsViewController.swift */,
+				345CDD921FD4FA6100BC8B3E /* GroupsViewController.xib */,
+				345CDD951FD4FCEB00BC8B3E /* EditGroupViewController.swift */,
+				345CDD961FD4FCEB00BC8B3E /* EditGroupViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		345CDD991FD4FF6200BC8B3E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				345CDD9A1FD4FFA500BC8B3E /* TextFieldTableViewCell.swift */,
+				345CDD9B1FD4FFA500BC8B3E /* TextFieldTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		345CDD9E1FD51E0B00BC8B3E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				345CDD9F1FD51E2D00BC8B3E /* NSObject+Stock.swift */,
+				345CDDA11FD51F5600BC8B3E /* UIKit+Stock.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		345CDDA31FD527D100BC8B3E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				345CDDA41FD527E900BC8B3E /* Group.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,9 +179,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				345CDD981FD4FCEB00BC8B3E /* EditGroupViewController.xib in Resources */,
+				345CDD941FD4FA6100BC8B3E /* GroupsViewController.xib in Resources */,
+				345CDD9D1FD4FFA500BC8B3E /* TextFieldTableViewCell.xib in Resources */,
 				345CDD891FD4F9BB00BC8B3E /* LaunchScreen.storyboard in Resources */,
 				345CDD861FD4F9BB00BC8B3E /* Assets.xcassets in Resources */,
-				345CDD841FD4F9BB00BC8B3E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,22 +194,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				345CDDA01FD51E2D00BC8B3E /* NSObject+Stock.swift in Sources */,
+				345CDD971FD4FCEB00BC8B3E /* EditGroupViewController.swift in Sources */,
+				345CDDA21FD51F5600BC8B3E /* UIKit+Stock.swift in Sources */,
+				345CDDA51FD527E900BC8B3E /* Group.swift in Sources */,
 				345CDD811FD4F9BB00BC8B3E /* ViewController.swift in Sources */,
 				345CDD7F1FD4F9BA00BC8B3E /* AppDelegate.swift in Sources */,
+				345CDD931FD4FA6100BC8B3E /* GroupsViewController.swift in Sources */,
+				345CDD9C1FD4FFA500BC8B3E /* TextFieldTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		345CDD821FD4F9BB00BC8B3E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				345CDD831FD4F9BB00BC8B3E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		345CDD871FD4F9BB00BC8B3E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
