@@ -12,13 +12,13 @@
 		345CDD891FD4F9BB00BC8B3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 345CDD871FD4F9BB00BC8B3E /* LaunchScreen.storyboard */; };
 		345CDD931FD4FA6100BC8B3E /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345CDD911FD4FA6100BC8B3E /* GroupsViewController.swift */; };
 		345CDD941FD4FA6100BC8B3E /* GroupsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 345CDD921FD4FA6100BC8B3E /* GroupsViewController.xib */; };
-		345CDD971FD4FCEB00BC8B3E /* EditGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345CDD951FD4FCEB00BC8B3E /* EditGroupViewController.swift */; };
-		345CDD981FD4FCEB00BC8B3E /* EditGroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 345CDD961FD4FCEB00BC8B3E /* EditGroupViewController.xib */; };
 		345CDD9C1FD4FFA500BC8B3E /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345CDD9A1FD4FFA500BC8B3E /* TextFieldTableViewCell.swift */; };
 		345CDD9D1FD4FFA500BC8B3E /* TextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 345CDD9B1FD4FFA500BC8B3E /* TextFieldTableViewCell.xib */; };
 		345CDDA01FD51E2D00BC8B3E /* NSObject+Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345CDD9F1FD51E2D00BC8B3E /* NSObject+Stock.swift */; };
-		345CDDA21FD51F5600BC8B3E /* UIKit+Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345CDDA11FD51F5600BC8B3E /* UIKit+Stock.swift */; };
 		345CDDA51FD527E900BC8B3E /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345CDDA41FD527E900BC8B3E /* Group.swift */; };
+		34FF342D1FD5492E0094716E /* UITextField+Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FF342C1FD5492E0094716E /* UITextField+Stock.swift */; };
+		34FF342F1FD5494A0094716E /* UITableView+Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FF342E1FD5494A0094716E /* UITableView+Stock.swift */; };
+		34FF34311FD549630094716E /* UIColor+Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FF34301FD549630094716E /* UIColor+Stock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,13 +29,13 @@
 		345CDD8A1FD4F9BB00BC8B3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		345CDD911FD4FA6100BC8B3E /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
 		345CDD921FD4FA6100BC8B3E /* GroupsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupsViewController.xib; sourceTree = "<group>"; };
-		345CDD951FD4FCEB00BC8B3E /* EditGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGroupViewController.swift; sourceTree = "<group>"; };
-		345CDD961FD4FCEB00BC8B3E /* EditGroupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditGroupViewController.xib; sourceTree = "<group>"; };
 		345CDD9A1FD4FFA500BC8B3E /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
 		345CDD9B1FD4FFA500BC8B3E /* TextFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldTableViewCell.xib; sourceTree = "<group>"; };
 		345CDD9F1FD51E2D00BC8B3E /* NSObject+Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Stock.swift"; sourceTree = "<group>"; };
-		345CDDA11FD51F5600BC8B3E /* UIKit+Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Stock.swift"; sourceTree = "<group>"; };
 		345CDDA41FD527E900BC8B3E /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		34FF342C1FD5492E0094716E /* UITextField+Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Stock.swift"; sourceTree = "<group>"; };
+		34FF342E1FD5494A0094716E /* UITableView+Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Stock.swift"; sourceTree = "<group>"; };
+		34FF34301FD549630094716E /* UIColor+Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Stock.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +85,6 @@
 			children = (
 				345CDD911FD4FA6100BC8B3E /* GroupsViewController.swift */,
 				345CDD921FD4FA6100BC8B3E /* GroupsViewController.xib */,
-				345CDD951FD4FCEB00BC8B3E /* EditGroupViewController.swift */,
-				345CDD961FD4FCEB00BC8B3E /* EditGroupViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -104,7 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				345CDD9F1FD51E2D00BC8B3E /* NSObject+Stock.swift */,
-				345CDDA11FD51F5600BC8B3E /* UIKit+Stock.swift */,
+				34FF342C1FD5492E0094716E /* UITextField+Stock.swift */,
+				34FF342E1FD5494A0094716E /* UITableView+Stock.swift */,
+				34FF34301FD549630094716E /* UIColor+Stock.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -176,7 +176,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				345CDD981FD4FCEB00BC8B3E /* EditGroupViewController.xib in Resources */,
 				345CDD941FD4FA6100BC8B3E /* GroupsViewController.xib in Resources */,
 				345CDD9D1FD4FFA500BC8B3E /* TextFieldTableViewCell.xib in Resources */,
 				345CDD891FD4F9BB00BC8B3E /* LaunchScreen.storyboard in Resources */,
@@ -191,11 +190,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34FF342D1FD5492E0094716E /* UITextField+Stock.swift in Sources */,
 				345CDDA01FD51E2D00BC8B3E /* NSObject+Stock.swift in Sources */,
-				345CDD971FD4FCEB00BC8B3E /* EditGroupViewController.swift in Sources */,
-				345CDDA21FD51F5600BC8B3E /* UIKit+Stock.swift in Sources */,
 				345CDDA51FD527E900BC8B3E /* Group.swift in Sources */,
 				345CDD7F1FD4F9BA00BC8B3E /* AppDelegate.swift in Sources */,
+				34FF342F1FD5494A0094716E /* UITableView+Stock.swift in Sources */,
+				34FF34311FD549630094716E /* UIColor+Stock.swift in Sources */,
 				345CDD931FD4FA6100BC8B3E /* GroupsViewController.swift in Sources */,
 				345CDD9C1FD4FFA500BC8B3E /* TextFieldTableViewCell.swift in Sources */,
 			);
