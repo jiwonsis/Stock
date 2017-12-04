@@ -1,11 +1,3 @@
-//
-//  GroupsViewController.swift
-//  Stock
-//
-//  Created by Scott moon on 04/12/2017.
-//  Copyright © 2017 Scott moon. All rights reserved.
-//
-
 import UIKit
 
 typealias Groups = [Group]
@@ -15,9 +7,14 @@ final class GroupsViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var groups = [Group]()
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
 }
 
 extension GroupsViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationUI()
@@ -25,6 +22,8 @@ extension GroupsViewController {
         if let groups = loadData() {
             self.groups = groups
         }
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(deleteGroup(_:)), name: Group.didDelete, object: nil)
     }
 }
 
@@ -48,7 +47,17 @@ private extension GroupsViewController {
     
     func saveGroup() {
         saveData(groups: groups)
+        tableView.reloadData()
     }
+    
+    @objc func deleteGroup(_ notification: Notification) {
+        
+        guard let group = notification.object as? Group  else { return }
+        guard let index = groups.index(where: {  $0.title == group.title }) else { return }
+        groups.remove(at: index)
+        saveGroup()
+    }
+    
 }
 
 private extension GroupsViewController {

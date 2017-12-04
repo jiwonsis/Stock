@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		345CDD7F1FD4F9BA00BC8B3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345CDD7E1FD4F9BA00BC8B3E /* AppDelegate.swift */; };
-		345CDD811FD4F9BB00BC8B3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345CDD801FD4F9BB00BC8B3E /* ViewController.swift */; };
 		345CDD861FD4F9BB00BC8B3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 345CDD851FD4F9BB00BC8B3E /* Assets.xcassets */; };
 		345CDD891FD4F9BB00BC8B3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 345CDD871FD4F9BB00BC8B3E /* LaunchScreen.storyboard */; };
 		345CDD931FD4FA6100BC8B3E /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345CDD911FD4FA6100BC8B3E /* GroupsViewController.swift */; };
@@ -25,7 +24,6 @@
 /* Begin PBXFileReference section */
 		345CDD7B1FD4F9BA00BC8B3E /* Stock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		345CDD7E1FD4F9BA00BC8B3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		345CDD801FD4F9BB00BC8B3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		345CDD851FD4F9BB00BC8B3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		345CDD881FD4F9BB00BC8B3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		345CDD8A1FD4F9BB00BC8B3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -75,7 +73,6 @@
 				345CDD991FD4FF6200BC8B3E /* Cells */,
 				345CDD901FD4F9DE00BC8B3E /* ViewControllers */,
 				345CDD7E1FD4F9BA00BC8B3E /* AppDelegate.swift */,
-				345CDD801FD4F9BB00BC8B3E /* ViewController.swift */,
 				345CDD851FD4F9BB00BC8B3E /* Assets.xcassets */,
 				345CDD871FD4F9BB00BC8B3E /* LaunchScreen.storyboard */,
 				345CDD8A1FD4F9BB00BC8B3E /* Info.plist */,
@@ -198,7 +195,6 @@
 				345CDD971FD4FCEB00BC8B3E /* EditGroupViewController.swift in Sources */,
 				345CDDA21FD51F5600BC8B3E /* UIKit+Stock.swift in Sources */,
 				345CDDA51FD527E900BC8B3E /* Group.swift in Sources */,
-				345CDD811FD4F9BB00BC8B3E /* ViewController.swift in Sources */,
 				345CDD7F1FD4F9BA00BC8B3E /* AppDelegate.swift in Sources */,
 				345CDD931FD4FA6100BC8B3E /* GroupsViewController.swift in Sources */,
 				345CDD9C1FD4FFA500BC8B3E /* TextFieldTableViewCell.swift in Sources */,
