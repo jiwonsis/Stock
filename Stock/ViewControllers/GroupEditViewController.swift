@@ -1,11 +1,3 @@
-//
-//  GroupEditViewController.swift
-//  Stock
-//
-//  Created by Scott moon on 04/12/2017.
-//  Copyright © 2017 Scott moon. All rights reserved.
-//
-
 import UIKit
 
 class GroupEditViewController: UIViewController {
@@ -27,9 +19,7 @@ class GroupEditViewController: UIViewController {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-}
 
-extension GroupEditViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -44,16 +34,24 @@ extension GroupEditViewController {
         
         titleField?.becomeFirstResponder()
     }
-}
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+    }
 
-private extension GroupEditViewController {
     func setupNavigationUI() {
         title = "새 그룹"
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(onCancel_))
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(onSave_))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(onCancel_))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(onSave_))
+        navigationItem.rightBarButtonItem?.isEnabled = false
     }
     
     @objc func onCancel_() {
+       onDismiss()
+    }
+    
+    func onDismiss() {
+        view.endEditing(true)
         dismiss(animated: true, completion: nil)
     }
     
@@ -70,7 +68,7 @@ private extension GroupEditViewController {
             didSaveGroup?(newGroup)
         }
         
-        dismiss(animated: true, completion: nil)
+        onDismiss()
     }
     
     func setupTableContent() {
@@ -94,7 +92,7 @@ private extension GroupEditViewController {
         present(avc, animated: true, completion: nil)
     }
     
-    
+
 }
 
 extension GroupEditViewController: UITableViewDataSource {
@@ -144,6 +142,9 @@ extension GroupEditViewController: UITableViewDelegate {
                 cell.titleLabel.text = "그룹 명:"
                 cell.inputField.placeholder = "그룹 명을 입력해주세요"
                 cell.inputField.text = group?.title
+                cell.didChageStringValue = { string in
+                    self.navigationItem.rightBarButtonItem?.isEnabled = cell.isPassUserInput(text: string)
+                }
                 titleField  = cell.inputField
                 titleField?.delegate = self
                 titleField?.returnKeyType = .next
@@ -178,11 +179,16 @@ extension GroupEditViewController: UITableViewDelegate {
 }
 
 extension GroupEditViewController: UITextFieldDelegate {
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == titleField {
             noteField?.becomeFirstResponder()
         } else if textField == noteField {
-            onSave_()
+            guard let isEnabled = navigationItem.rightBarButtonItem?.isEnabled else {
+                    onSave_()
+                    return true
+            }
+            if isEnabled { onSave_() }
         }
         return true
     }

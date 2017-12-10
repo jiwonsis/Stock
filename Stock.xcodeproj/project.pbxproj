@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3432A0B71FD559AD009A787C /* GroupEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3432A0B51FD559AD009A787C /* GroupEditViewController.swift */; };
 		3432A0B81FD559AD009A787C /* GroupEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3432A0B61FD559AD009A787C /* GroupEditViewController.xib */; };
+		3432A0BF1FD57387009A787C /* ISO8601+Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3432A0BE1FD57387009A787C /* ISO8601+Stock.swift */; };
 		345CDD7F1FD4F9BA00BC8B3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345CDD7E1FD4F9BA00BC8B3E /* AppDelegate.swift */; };
 		345CDD861FD4F9BB00BC8B3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 345CDD851FD4F9BB00BC8B3E /* Assets.xcassets */; };
 		345CDD891FD4F9BB00BC8B3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 345CDD871FD4F9BB00BC8B3E /* LaunchScreen.storyboard */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		3432A0B51FD559AD009A787C /* GroupEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupEditViewController.swift; sourceTree = "<group>"; };
 		3432A0B61FD559AD009A787C /* GroupEditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupEditViewController.xib; sourceTree = "<group>"; };
+		3432A0BE1FD57387009A787C /* ISO8601+Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ISO8601+Stock.swift"; sourceTree = "<group>"; };
 		345CDD7B1FD4F9BA00BC8B3E /* Stock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		345CDD7E1FD4F9BA00BC8B3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		345CDD851FD4F9BB00BC8B3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				345CDD911FD4FA6100BC8B3E /* GroupsViewController.swift */,
+				34CDC43F1FD664C100E9A535 /* New Group */,
 				345CDD921FD4FA6100BC8B3E /* GroupsViewController.xib */,
 				3432A0B51FD559AD009A787C /* GroupEditViewController.swift */,
 				3432A0B61FD559AD009A787C /* GroupEditViewController.xib */,
@@ -111,6 +114,7 @@
 				34FF342C1FD5492E0094716E /* UITextField+Stock.swift */,
 				34FF342E1FD5494A0094716E /* UITableView+Stock.swift */,
 				34FF34301FD549630094716E /* UIColor+Stock.swift */,
+				3432A0BE1FD57387009A787C /* ISO8601+Stock.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -121,6 +125,13 @@
 				345CDDA41FD527E900BC8B3E /* Group.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		34CDC43F1FD664C100E9A535 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +211,7 @@
 				34FF342D1FD5492E0094716E /* UITextField+Stock.swift in Sources */,
 				345CDDA01FD51E2D00BC8B3E /* NSObject+Stock.swift in Sources */,
 				345CDDA51FD527E900BC8B3E /* Group.swift in Sources */,
+				3432A0BF1FD57387009A787C /* ISO8601+Stock.swift in Sources */,
 				345CDD7F1FD4F9BA00BC8B3E /* AppDelegate.swift in Sources */,
 				34FF342F1FD5494A0094716E /* UITableView+Stock.swift in Sources */,
 				34FF34311FD549630094716E /* UIColor+Stock.swift in Sources */,
